@@ -84,13 +84,13 @@ public class SeleniumDriver {
 			}
 		}
 
-		public void click(WebElement ele) {
+		public void click(WebElement customerclick) {
 			String text = "";
 			try {
-				WebDriverWait wait = new WebDriverWait(driver, 30);
-				wait.until(ExpectedConditions.elementToBeClickable(ele));
-				text = ele.getText();
-				ele.click();
+				WebDriverWait wait = new WebDriverWait(driver, 60);
+				wait.until(ExpectedConditions.elementToBeClickable(customerclick));
+				text = customerclick.getText();
+				customerclick.click();
 				//reportStep("The element " + text + " is clicked", "PASS");
 			} catch (InvalidElementStateException e) {
 				//reportStep("The element: " + text + " could not be clicked", "FAIL");

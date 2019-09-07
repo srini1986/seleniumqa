@@ -6,4 +6,4 @@ When users enters details
 Then quotes should be successfully generated
 Examples: 
 |Url|
-|https://www.google.com|
+|https://www.thig.com|

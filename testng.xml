@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression" parallel="tests">
+   <test name="Automation Test Report">
+    <classes>
+		  <class name="TestGrid.Node1"/>
+   	        <class name="runner.LaunchURLRunner"/>
+      	<class name="rest.createaincident"/>
+    </classes>
+  </test> 
+     <!-- Test completed-->
+</suite> <!-- Suite -->

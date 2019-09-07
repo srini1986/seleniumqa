@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 28.64 s <<< FAILURE! - in TestSuite
+feature(runner.LaunchURLRunner)  Time elapsed: 14.168 s  <<< FAILURE!
+cucumber.runtime.CucumberException: java.lang.AssertionError: expected [Tower Hill Insurance Group - Login] but found [WELCOME TO TOWER HILL'S AGENT PORTAL]
+Caused by: java.lang.AssertionError: expected [Tower Hill Insurance Group - Login] but found [WELCOME TO TOWER HILL'S AGENT PORTAL]
+
+feature(runner.LaunchURLRunner)  Time elapsed: 12.097 s  <<< FAILURE!
+cucumber.runtime.CucumberException: java.lang.AssertionError: expected [Tower Hill Insurance Group - Login] but found [WELCOME TO TOWER HILL'S AGENT PORTAL]
+Caused by: java.lang.AssertionError: expected [Tower Hill Insurance Group - Login] but found [WELCOME TO TOWER HILL'S AGENT PORTAL]
+

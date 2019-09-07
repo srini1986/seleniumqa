@@ -1,11 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-09-03T10:43:48Z" name="com.training.seleniumMaven.AppTest" finished-at="2019-09-03T10:43:48Z" duration-ms="10">
+  <suite started-at="2019-09-04T03:55:56Z" name="Regression" finished-at="2019-09-04T03:56:44Z" duration-ms="48439">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.LaunchURLRunner@55ca8de8]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2019-09-03T10:43:48Z" name="Command line test" finished-at="2019-09-03T10:43:48Z" duration-ms="10">
-    </test> <!-- Command line test -->
-  </suite> <!-- com.training.seleniumMaven.AppTest -->
+    <test started-at="2019-09-04T03:55:56Z" name="Automation Test Report" finished-at="2019-09-04T03:56:44Z" duration-ms="48439">
+      <class name="runner.LaunchURLRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.LaunchURLRunner@55ca8de8]" started-at="2019-09-04T03:55:56Z" name="setUpClass" finished-at="2019-09-04T03:55:56Z" duration-ms="665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.LaunchURLRunner@55ca8de8]" started-at="2019-09-04T03:55:57Z" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-09-04T03:56:19Z" duration-ms="22811" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[loginpixeel1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.LaunchURLRunner@55ca8de8]" started-at="2019-09-04T03:56:19Z" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-09-04T03:56:37Z" duration-ms="17369" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[loginpixeel]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.LaunchURLRunner@55ca8de8]" started-at="2019-09-04T03:56:37Z" name="tearDownClass" finished-at="2019-09-04T03:56:37Z" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.LaunchURLRunner -->
+      <class name="rest.createaincident">
+        <test-method signature="setup()[pri:0, instance:rest.createaincident@2c34f934]" started-at="2019-09-04T03:56:37Z" name="setup" finished-at="2019-09-04T03:56:44Z" duration-ms="7046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- rest.createaincident -->
+    </test> <!-- Automation Test Report -->
+  </suite> <!-- Regression -->
 </testng-results>
