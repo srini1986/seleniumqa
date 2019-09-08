@@ -43,7 +43,7 @@ public class AgentLogin {
 		
 		try {
 			prop.load(new FileInputStream(
-					new File("C:\\Users\\sdhar\\Downloads\\942019\\NewCode\\UIProperties.Properties")));
+					new File(".\UIProperties.Properties")));
 		} catch (IOException e) {
 
 		}
