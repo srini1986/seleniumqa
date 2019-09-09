@@ -34,7 +34,7 @@ public class Node1 {
 		
 		DesiredCapabilities capability = new DesiredCapabilities();
 		//capability.setPlatform(Platform.LINUX);
-		// System.setProperty("webdriver.chrome.driver","C:\\Users\\sdhar\\Desktop\\softwares\\jars\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\sdhar\\Desktop\\softwares\\jars\\chromedriver.exe");
 		capability.setBrowserName("chrome");
 		ChromeOptions options = new ChromeOptions();
 		WebDriver driver = new 
