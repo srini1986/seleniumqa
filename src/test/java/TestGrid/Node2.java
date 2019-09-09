@@ -28,7 +28,8 @@ public  void setUp() throws MalformedURLException {
     	System.setProperty("webdriver.chrome.driver","C:\\Users\\sdhar\\Desktop\\softwares\\jars\\chromedriver.exe");
     	capability.setBrowserName("chrome");
     	ChromeOptions options=new ChromeOptions();
-        WebDriver driver=new RemoteWebDriver(new URL(url),options);
+       // WebDriver driver=new RemoteWebDriver(new URL(url),options);
+	WebDriver driver = new RemoteWebDriver(new URL(prop.getProperty("node_url").trim()), options);
 		driver.manage().deleteAllCookies();
     	driver.manage().window().maximize();
     	driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
