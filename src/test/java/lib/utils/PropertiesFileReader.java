@@ -12,7 +12,7 @@ public class PropertiesFileReader {
 	
 	Properties properties = new Properties();
 	try {
-		properties.load(new FileInputStream("C:\\Users\\sdhar\\Downloads\\942019\\NewCode\\UIProperties.Properties"));
+		properties.load(new FileInputStream("./UIProperties.Properties"));
 		}
 	catch (Exception e) {
 		System.out.println("Exception: " + e);

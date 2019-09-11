@@ -25,7 +25,7 @@ public  void setUp() throws MalformedURLException {
 		String url=" http://10.1.227.123:5555/wd/hub";
 		DesiredCapabilities capability=new DesiredCapabilities();
     	capability.setPlatform(Platform.WIN10);
-    //	System.setProperty("webdriver.chrome.driver","C:\\Users\\sdhar\\Desktop\\softwares\\jars\\chromedriver.exe");
+    	System.setProperty("webdriver.chrome.driver","C:\\Users\\sdhar\\Desktop\\softwares\\jars\\chromedriver.exe");
     	capability.setBrowserName("chrome");
     	ChromeOptions options=new ChromeOptions();
         WebDriver driver=new RemoteWebDriver(new URL(url),options);
