@@ -5,8 +5,8 @@
     <classes>
 		  <class name="TestGrid.Node1"/>
    	        <class name="runner.LaunchURLRunner"/>
-      	<class name="rest.createaincident"/>
+      	<!-- <class name="rest.createaincident"/> -->
     </classes>
   </test> 
-     <!-- Test completed-->
+       <!-- Test completed-->
 </suite> <!-- Suite -->

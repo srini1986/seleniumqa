@@ -1,6 +1,7 @@
 package TestGrid;
 
 import java.io.File;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -30,11 +31,11 @@ public class Node1 {
 		// url="http://35.224.174.206:4444/wd/hub";
 //		url = "http://10.1.227.151:7777/wd/hub";
 		Properties prop = new Properties();
-	prop.load(new FileInputStream(new File("./UIProperties.Properties")));
+		prop.load(new FileInputStream(new File("./UIProperties.Properties")));
 		
 		DesiredCapabilities capability = new DesiredCapabilities();
 		//capability.setPlatform(Platform.LINUX);
-		//System.setProperty("webdriver.chrome.driver","C:\\Users\\sdhar\\Desktop\\softwares\\jars\\chromedriver.exe");
+		// System.setProperty("webdriver.chrome.driver","C:\\Users\\sdhar\\Desktop\\softwares\\jars\\chromedriver.exe");
 		capability.setBrowserName("chrome");
 		ChromeOptions options = new ChromeOptions();
 		WebDriver driver = new RemoteWebDriver(new URL(prop.getProperty("node_url").trim()), options);
