@@ -38,7 +38,9 @@ public class Node1 {
 		// System.setProperty("webdriver.chrome.driver","C:\\Users\\sdhar\\Desktop\\softwares\\jars\\chromedriver.exe");
 		capability.setBrowserName("chrome");
 		ChromeOptions options = new ChromeOptions();
-		WebDriver driver = new RemoteWebDriver(new URL(prop.getProperty("node_url").trim()), options);
+		String url="http://34.70.117.31:4444/wd/hub";
+                WebDriver driver=new RemoteWebDriver(new URL(url),capability);
+		//WebDriver driver = new RemoteWebDriver(new URL(prop.getProperty("node_url").trim()), options);
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
